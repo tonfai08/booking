@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Button, Input, Form, message } from "antd";
+import { createOrder } from "../../services/order";
 import "./styles.css";
 
-const DrawerSell = () => {
+const DrawerSell = (props) => {
+  const { onClose } = props;
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [showCustomerForm, setShowCustomerForm] = useState(false);
-
+  const [orderSuccess, setOrderSuccess] = useState(false);
   const pricePerItem1 = 300;
   const pricePerItem2 = 500;
 
@@ -50,13 +52,33 @@ const DrawerSell = () => {
     try {
       const result = await createOrder(orderData);
       console.log("Order created successfully:", result);
-
+      resetForm();
+      setOrderSuccess(true);
       setShowCustomerForm(false);
       message.success("การสั่งซื้อสำเร็จ!");
     } catch (error) {
       console.error("Error creating order:", error);
       message.error("เกิดข้อผิดพลาดในการสั่งซื้อ");
     }
+  };
+
+  const resetForm = () => {
+    setCount1(0);
+    setCount2(0);
+    setCustomerInfo({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      address: "",
+    });
+  };
+
+  const handleClose = () => {
+    setShowCustomerForm(false);
+    setOrderSuccess(false);
+    resetForm();
+    onClose();
   };
 
   const handleConfirmClick = () => {
@@ -69,7 +91,14 @@ const DrawerSell = () => {
 
   return (
     <div className="seatsContainer">
-      {!showCustomerForm ? (
+      {orderSuccess ? (
+        <>
+          ขอบคุณสำหรับการสั่งซื้อ
+          <Button type="primary" onClick={handleClose}>
+            ตกลง
+          </Button>
+        </>
+      ) : !showCustomerForm ? (
         <>
           <div className="book-buy">
             <div className="book-buy-img">

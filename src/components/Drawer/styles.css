@@ -1,0 +1,180 @@
+body {
+  font-family: "Prompt", sans-serif;
+}
+.font-prompt {
+  font-family: "Prompt", sans-serif;
+}
+.seatsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.seat {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 60px;
+  align-items: center;
+}
+.seat.selected {
+  border: 2px solid #928650;
+  background-color: #e7d37b;
+}
+.occupied {
+  background-color: rgb(161, 161, 112);
+}
+.marginTop50 {
+  width: 2px;
+  height: 2px;
+  margin-bottom: 50px;
+}
+
+.popover-detail {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.tooltip-top::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0px;
+  left: 50%;
+  top: 0;
+  border: 1px solid transparent;
+  border-top: 0;
+  border-bottom: 1px solid #5494db;
+  transform: translate(-50%, calc(-100% - 5px));
+}
+.seat-img {
+  width: 40px;
+  height: 40px;
+}
+.profile-img {
+  width: 100%;
+  width: 60px;
+  height: auto;
+}
+.seat-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+}
+.screen {
+  width: 90%;
+  border: #9bbae2 solid 4px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.margin-left {
+  margin-right: 10px;
+}
+.bloc-icon-fix {
+  width: 40px;
+  height: 30px;
+}
+.custom-icon {
+  font-size: 30px;
+}
+.custom-icon-285 {
+  color: #c64e55;
+}
+.custom-icon-250 {
+  color: #ec8737;
+}
+.icon-reserved {
+  color: #adadad;
+}
+.reserved-seat-name {
+  color: #adadad;
+}
+.text-status {
+  font-weight: bold;
+}
+.text-red {
+  color: #ff000d;
+}
+
+.book-buy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.book-buy-img img {
+  width: 50px;
+  height: 50px;
+}
+
+.book-buy-count {
+  flex: 1;
+}
+
+.book-buy-price {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .seat-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    margin-bottom: 6px;
+  }
+  .seatsContainer {
+    padding: 4px;
+  }
+  .seat-img {
+    width: 25px;
+    height: 25px;
+  }
+  .seat {
+    padding: 1px;
+    margin: 1px;
+    width: 16px;
+    height: 27px;
+    border-radius: 4px;
+    align-items: center;
+  }
+  .bloc-icon-fix {
+    width: 15px;
+    height: 20px;
+  }
+  .custom-icon {
+    font-size: 12px;
+  }
+  .text-seat-name {
+    font-size: 7px;
+  }
+  .margin-left {
+    margin-right: 1px;
+  }
+}

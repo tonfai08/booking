@@ -1,0 +1,7 @@
+:root {
+  --font-family: "Prompt", sans-serif; /* ตั้งค่าให้เป็น CSS Variable */
+}
+
+body {
+  font-family: var(--font-family); /* ใช้ฟอนต์ Prompt */
+}

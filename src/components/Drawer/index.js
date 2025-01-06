@@ -9,6 +9,8 @@ const DrawerSell = (props) => {
   const [count2, setCount2] = useState(0);
   const [showCustomerForm, setShowCustomerForm] = useState(false);
   const [orderSuccess, setOrderSuccess] = useState(false);
+  const [slipBase64, setSlipBase64] = useState("");
+
   const pricePerItem1 = 300;
   const pricePerItem2 = 500;
 
@@ -38,6 +40,10 @@ const DrawerSell = (props) => {
       message.error("กรุณาเลือกสินค้าอย่างน้อย 1 เล่ม");
       return;
     }
+    if (!slipBase64) {
+      message.error("กรุณาอัปโหลดสลิปการโอนเงิน");
+      return;
+    }
 
     const orderData = {
       email: customerInfo.email,
@@ -47,6 +53,7 @@ const DrawerSell = (props) => {
       book1: count1,
       book2: count2,
       totalPrice: grandTotal,
+      slip: slipBase64,
     };
 
     try {
@@ -86,6 +93,22 @@ const DrawerSell = (props) => {
       message.error("กรุณาเลือกสินค้าอย่างน้อย 1 เล่ม");
     } else {
       setShowCustomerForm(true);
+    }
+  };
+
+  const handleFileUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64String = reader.result.split(",")[1]; // เอาเฉพาะ Base64
+        setSlipBase64(base64String);
+      };
+      reader.onerror = (error) => {
+        console.error("Error reading file:", error);
+        message.error("เกิดข้อผิดพลาดในการอ่านไฟล์");
+      };
+      reader.readAsDataURL(file);
     }
   };
 
@@ -181,6 +204,9 @@ const DrawerSell = (props) => {
                 placeholder="กรอกที่อยู่"
                 rows={4}
               />
+            </Form.Item>
+            <Form.Item label="อัปโหลดสลิปการโอนเงิน" required>
+              <Input type="file" accept="image/*" onChange={handleFileUpload} />
             </Form.Item>
             <Button type="primary" htmlType="submit">
               ยืนยันการสั่งซื้อ

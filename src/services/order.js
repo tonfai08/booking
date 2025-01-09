@@ -21,3 +21,13 @@ export const fetchOrders = async () => {
     throw error;
   }
 };
+
+export const updateOrder = async (orderId, updateData) => {
+  try {
+    const response = await axios.put(`${API_URL}/${orderId}`, updateData);
+    return response.data;
+  } catch (error) {
+    console.error("Error updating order:", error);
+    throw error;
+  }
+};

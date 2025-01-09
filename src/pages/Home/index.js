@@ -7,6 +7,7 @@ import DrawerSell from "../../components/Drawer";
 function Home() {
   const [isBookOpen, setIsBookOpen] = useState(false);
   const [isbookType, setIsBookType] = useState(1);
+  const [stepBuy, setStepBuy] = useState(0);
   const [open, setOpen] = useState(false);
   const handleOpenBook = (bookType) => {
     setIsBookType(bookType);
@@ -18,7 +19,9 @@ function Home() {
   };
   const onClose = () => {
     setOpen(false);
+    setStepBuy(0);
   };
+
   return (
     <div className="home-container">
       <div className="hero-section">
@@ -94,7 +97,11 @@ function Home() {
       </div>
       <div className="footer-section"></div>
       <Drawer title="จองหนังสือ" onClose={onClose} mask={false} open={open}>
-        <DrawerSell onClose={onClose} />
+        <DrawerSell
+          onClose={onClose}
+          stepBuy={stepBuy}
+          changeStepBuy={setStepBuy}
+        />
       </Drawer>
     </div>
   );

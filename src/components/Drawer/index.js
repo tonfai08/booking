@@ -4,7 +4,7 @@ import { createOrder } from "../../services/order";
 import "./styles.css";
 
 const DrawerSell = (props) => {
-  const { onClose } = props;
+  const { onClose, stepBuy, changeStepBuy } = props;
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [showCustomerForm, setShowCustomerForm] = useState(false);
@@ -62,6 +62,7 @@ const DrawerSell = (props) => {
       resetForm();
       setOrderSuccess(true);
       setShowCustomerForm(false);
+      changeStepBuy(2);
       message.success("การสั่งซื้อสำเร็จ!");
     } catch (error) {
       console.error("Error creating order:", error);
@@ -93,11 +94,13 @@ const DrawerSell = (props) => {
       message.error("กรุณาเลือกสินค้าอย่างน้อย 1 เล่ม");
     } else {
       setShowCustomerForm(true);
+      changeStepBuy(1);
     }
   };
 
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
+    if (!file) message.error("กรุณาอัพโหลด Slip");
     if (file) {
       const reader = new FileReader();
       reader.onload = () => {
@@ -114,14 +117,14 @@ const DrawerSell = (props) => {
 
   return (
     <div className="seatsContainer">
-      {orderSuccess ? (
+      {stepBuy === 2 ? (
         <>
           ขอบคุณสำหรับการสั่งซื้อ
           <Button type="primary" onClick={handleClose}>
             ตกลง
           </Button>
         </>
-      ) : !showCustomerForm ? (
+      ) : stepBuy === 0 ? (
         <>
           <div className="book-buy">
             <div className="book-buy-img">

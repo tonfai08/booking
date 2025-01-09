@@ -51,6 +51,16 @@ function AdminPage() {
       key: "email",
     },
     {
+      title: "order No.",
+      dataIndex: "orderId",
+      key: "orderId",
+    },
+    {
+      title: "จำนวนเงิน",
+      dataIndex: "totalPrice",
+      key: "totalPrice",
+    },
+    {
       title: "เบอร์โทร",
       dataIndex: "tel",
       key: "tel",

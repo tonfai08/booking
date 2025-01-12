@@ -86,37 +86,37 @@ function AdminOrdersPage() {
       filterMode: "tree",
       filterSearch: true,
       onFilter: (value, record) => record.name.startsWith(value),
-      sorter: (a, b) => a.name - b.name,
+      sorter: (a, b) => a.name.localeCompare(b.name), // ใช้ localeCompare สำหรับ string
     },
     {
       title: "อีเมล",
       dataIndex: "email",
       key: "email",
-      sorter: (a, b) => a.email - b.email,
+      sorter: (a, b) => a.email.localeCompare(b.email), // ใช้ localeCompare สำหรับ string
     },
     {
       title: "order No.",
       dataIndex: "orderId",
       key: "orderId",
-      sorter: (a, b) => a.orderId - b.orderId,
+      sorter: (a, b) => a.orderId - b.orderId, // ใช้ตัวเลขเปรียบเทียบ
     },
     {
       title: "จำนวนเงิน",
       dataIndex: "totalPrice",
       key: "totalPrice",
-      sorter: (a, b) => a.totalPrice - b.totalPrice,
+      sorter: (a, b) => a.totalPrice - b.totalPrice, // ใช้ตัวเลขเปรียบเทียบ
     },
     {
       title: "เบอร์โทร",
       dataIndex: "tel",
       key: "tel",
-      sorter: (a, b) => a.tel - b.tel,
+      sorter: (a, b) => a.tel.localeCompare(b.tel), // ใช้ localeCompare สำหรับ string
     },
     {
       title: "ที่อยู่",
       dataIndex: "address",
       key: "address",
-      sorter: (a, b) => a.address - b.address,
+      sorter: (a, b) => a.address.localeCompare(b.address), // ใช้ localeCompare สำหรับ string
     },
     {
       title: "วันที่สร้างรายการ",
@@ -125,7 +125,7 @@ function AdminOrdersPage() {
       render: (createdAt) => (
         <span>{moment(createdAt).format("DD/MM/YYYY HH:mm:ss")}</span>
       ),
-      sorter: (a, b) => new Date(a.createdAt) - new Date(b.createdAt),
+      sorter: (a, b) => new Date(a.createdAt) - new Date(b.createdAt), // ใช้ Date เปรียบเทียบ
     },
     {
       title: "สถานะ",
@@ -134,7 +134,7 @@ function AdminOrdersPage() {
       render: (status) => (
         <Tag color={status === "paid" ? "green" : "volcano"}>{status}</Tag>
       ),
-      sorter: (a, b) => a.status - b.status,
+      sorter: (a, b) => a.status.localeCompare(b.status), // ใช้ localeCompare สำหรับ string
     },
     {
       title: "สลิปการโอนเงิน",
@@ -192,18 +192,20 @@ function AdminOrdersPage() {
     <Sidebar title="Orders">
       <div>
         <div className="admin-box">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              marginBottom: "20px",
-            }}
-          >
-            <Tabs defaultActiveKey="all" onChange={handleTabChange}>
-              <TabPane tab="All" key="all" />
-              <TabPane tab="Pending" key="pending" />
-              <TabPane tab="Paid" key="paid" />
-            </Tabs>
+          <div className="admin-btn-export">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "20px",
+              }}
+            >
+              <Tabs defaultActiveKey="all" onChange={handleTabChange}>
+                <TabPane tab="All" key="all" />
+                <TabPane tab="Pending" key="pending" />
+                <TabPane tab="Paid" key="paid" />
+              </Tabs>
+            </div>
             <Button type="primary" onClick={handleExportCSV}>
               Export CSV
             </Button>

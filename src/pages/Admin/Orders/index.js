@@ -15,6 +15,7 @@ import { fetchOrders, updateOrder } from "../../../services/order";
 import "./styles.css";
 import Sidebar from "../../../components/Sidebar";
 import Papa from "papaparse";
+import moment from "moment";
 
 const { Option } = Select;
 const { TabPane } = Tabs;
@@ -82,31 +83,49 @@ function AdminOrdersPage() {
       title: "ชื่อผู้สั่งซื้อ",
       dataIndex: "name",
       key: "name",
+      filterMode: "tree",
+      filterSearch: true,
+      onFilter: (value, record) => record.name.startsWith(value),
+      sorter: (a, b) => a.name - b.name,
     },
     {
       title: "อีเมล",
       dataIndex: "email",
       key: "email",
+      sorter: (a, b) => a.email - b.email,
     },
     {
       title: "order No.",
       dataIndex: "orderId",
       key: "orderId",
+      sorter: (a, b) => a.orderId - b.orderId,
     },
     {
       title: "จำนวนเงิน",
       dataIndex: "totalPrice",
       key: "totalPrice",
+      sorter: (a, b) => a.totalPrice - b.totalPrice,
     },
     {
       title: "เบอร์โทร",
       dataIndex: "tel",
       key: "tel",
+      sorter: (a, b) => a.tel - b.tel,
     },
     {
       title: "ที่อยู่",
       dataIndex: "address",
       key: "address",
+      sorter: (a, b) => a.address - b.address,
+    },
+    {
+      title: "วันที่สร้างรายการ",
+      dataIndex: "createdAt",
+      key: "createdAt",
+      render: (createdAt) => (
+        <span>{moment(createdAt).format("DD/MM/YYYY HH:mm:ss")}</span>
+      ),
+      sorter: (a, b) => new Date(a.createdAt) - new Date(b.createdAt),
     },
     {
       title: "สถานะ",
@@ -115,6 +134,7 @@ function AdminOrdersPage() {
       render: (status) => (
         <Tag color={status === "paid" ? "green" : "volcano"}>{status}</Tag>
       ),
+      sorter: (a, b) => a.status - b.status,
     },
     {
       title: "สลิปการโอนเงิน",

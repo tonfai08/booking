@@ -1,0 +1,58 @@
+.layout-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-container {
+  width: 200px;
+  background-color: #001529;
+}
+
+.content-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.header-container {
+  margin-bottom: 20px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.ant-menu {
+  height: 100%; /* เต็มความสูง */
+  border-right: none;
+  background-color: #001529; /* สีพื้นหลังของเมนู */
+}
+
+.ant-menu-item {
+  color: white !important; /* กำหนดสีข้อความเป็นสีขาว */
+  font-size: 16px; /* ปรับขนาดตัวอักษร */
+}
+
+.ant-menu-item:hover {
+  background-color: #1890ff !important; /* สีพื้นหลังเมื่อ hover */
+  color: white !important; /* สีข้อความเมื่อ hover */
+}
+
+.ant-menu-item-selected {
+  background-color: #1890ff !important; /* สีพื้นหลังเมื่อเลือก */
+  color: white !important; /* สีข้อความเมื่อเลือก */
+}
+
+.ant-menu-item-selected .anticon {
+  color: white !important; /* สีของไอคอนเมื่อเลือก */
+}
+
+.ant-menu-item .anticon {
+  color: white; /* สีของไอคอนปกติ */
+}
+
+.ant-menu-item:hover .anticon {
+  color: white; /* สีของไอคอนเมื่อ hover */
+}

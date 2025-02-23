@@ -10,6 +10,13 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Navbar from "../../components/Navbar";
 import ContactList from "../../components/ContactList";
+import { FaXTwitter, FaFacebook, FaInstagram } from "react-icons/fa6"; // ใช้โลโก้ X แทน Twitter
+
+const iconMap = {
+  twitter: <FaXTwitter />,
+  facebook: <FaFacebook />,
+  instagram: <FaInstagram />,
+};
 function Home() {
   const navigate = useNavigate();
   const handleOpenBook = (bookType) => {
@@ -29,7 +36,7 @@ function Home() {
     {
       id: 1,
       name: "ᴘғ. 🧸`♡*",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/profile/1.PNG",
       socials: {
         twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
       },
@@ -174,6 +181,20 @@ function Home() {
         <ContactList title="นักวาด" contacts={artists} />
         <ContactList title="นักเขียน" contacts={writers} />
         <ContactList title="ใครก็ไม่รู้" contacts={others} />
+      </div>
+
+      <div className="foot-section">
+        <div className="left">
+          <h3>Operated by @krtskandkhn_th</h3>
+        </div>
+        <div className="right">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            {iconMap["twitter"]}
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            {iconMap["instagram"]}
+          </a>
+        </div>
       </div>
     </div>
   );

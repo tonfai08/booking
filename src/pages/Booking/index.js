@@ -9,7 +9,7 @@ function Booking() {
       <div className="top-section">
         <div className="image-container">
           <img
-            src="/images/hero-section-1.PNG"
+            src="/images/hero-section-1.png"
             alt="My Image"
             className="image-book"
           />
@@ -27,7 +27,7 @@ function Booking() {
         </div>
         <div className="image-container">
           <img
-            src="/images/hero-section-2.PNG"
+            src="/images/hero-section-2.png"
             alt="My Image"
             className="image-book"
           />

@@ -8,11 +8,11 @@ const Book = (props) => {
   console.log("currenBook", currenBook);
   if (currenBook === 1) {
     book = {
-      img: "/images/hero-section-1.PNG",
+      img: "/images/hero-section-1.png",
     };
   } else {
     book = {
-      img: "/images/hero-section-2.PNG",
+      img: "/images/hero-section-2.png",
     };
   }
   const bookRef = useRef();

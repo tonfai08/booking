@@ -36,7 +36,7 @@ function Home() {
     {
       id: 1,
       name: "ᴘғ. 🧸`♡*",
-      image: "/images/profile/1.PNG",
+      image: "/images/profile/1.png",
       socials: {
         twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
       },
@@ -44,25 +44,25 @@ function Home() {
     {
       id: 2,
       name: "Jane Smith",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: { twitter: "#" },
     },
     {
       id: 3,
       name: "Alice Johnson",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: { twitter: "#", facebook: "#", instagram: "#" },
     },
     {
       id: 4,
       name: "John Doe",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: { twitter: "#", facebook: "#", instagram: "#" },
     },
     {
       id: 5,
       name: "Jane Smith",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: {
         twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
         facebook: "#",
@@ -72,7 +72,7 @@ function Home() {
     {
       id: 6,
       name: "Alice Johnson",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: { twitter: "#", facebook: "#", instagram: "#" },
     },
   ];
@@ -81,7 +81,7 @@ function Home() {
     {
       id: 1,
       name: "ᴘғ. 🧸`♡*",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: {
         twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
         facebook: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
@@ -91,19 +91,19 @@ function Home() {
     {
       id: 2,
       name: "Jane Smith",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: { twitter: "#" },
     },
     {
       id: 3,
       name: "Alice Johnson",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: { twitter: "#", facebook: "#", instagram: "#" },
     },
     {
       id: 4,
       name: "John Doe",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: { twitter: "#", facebook: "#", instagram: "#" },
     },
   ];
@@ -112,7 +112,7 @@ function Home() {
     {
       id: 1,
       name: "ᴘғ. 🧸`♡*",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: {
         twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
       },
@@ -120,7 +120,7 @@ function Home() {
     {
       id: 2,
       name: "Jane Smith",
-      image: "/images/hero-section-1.PNG",
+      image: "/images/hero-section-1.png",
       socials: { twitter: "#" },
     },
   ];
@@ -141,12 +141,12 @@ function Home() {
           >
             <SwiperSlide>
               <div className="carousel-item">
-                <img src="/images/hero-1.PNG" alt="My Image" />
+                <img src="/images/hero-1.png" alt="My Image" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="carousel-item">
-                <img src="/images/hero-2.PNG" alt="My Image" />
+                <img src="/images/hero-2.png" alt="My Image" />
               </div>
             </SwiperSlide>
           </Swiper>
@@ -156,12 +156,12 @@ function Home() {
       <div className="two-section">
         <div className="book-container">
           <img
-            src="/images/Book_Dust_Jacket_Mockup_2.PNG"
+            src="/images/Book_Dust_Jacket_Mockup_2.png"
             alt="Book 1"
             className="image book-front"
           />
           <img
-            src="/images/Book_Dust_Jacket_Mockup_1.PNG"
+            src="/images/Book_Dust_Jacket_Mockup_1.png"
             alt="Book 2"
             className="image book-back"
           />

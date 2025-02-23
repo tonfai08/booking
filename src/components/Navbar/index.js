@@ -10,7 +10,7 @@ const Navbar = () => {
       {/* 🔹 โลโก้ตรงกลาง */}
       <div className="logo">
         {" "}
-        <img src="/images/logo.PNG" alt="My Image" className="logo-img" />
+        <img src="/images/logo.png" alt="My Image" className="logo-img" />
       </div>
 
       {/* 🔹 เมนูด้านขวา (Desktop) */}

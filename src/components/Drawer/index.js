@@ -128,7 +128,7 @@ const DrawerSell = (props) => {
         <>
           <div className="book-buy">
             <div className="book-buy-img">
-              <img src="/images/hero-section-1.PNG" alt="Product 1" />
+              <img src="/images/hero-section-1.png" alt="Product 1" />
             </div>
             <div className="book-buy-count">
               <Input
@@ -143,7 +143,7 @@ const DrawerSell = (props) => {
           </div>
           <div className="book-buy">
             <div className="book-buy-img">
-              <img src="/images/hero-section-2.PNG" alt="Product 2" />
+              <img src="/images/hero-section-2.png" alt="Product 2" />
             </div>
             <div className="book-buy-count">
               <Input

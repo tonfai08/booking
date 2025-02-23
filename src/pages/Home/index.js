@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import Book from "../../components/Book";
+import { useNavigate } from "react-router-dom";
 import "./home.css";
-import { Popover, Drawer } from "antd";
+import { Popover, Drawer, Button } from "antd";
 import DrawerSell from "../../components/Drawer";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Navbar from "../../components/Navbar";
+import ContactList from "../../components/ContactList";
 function Home() {
-  const [isBookOpen, setIsBookOpen] = useState(false);
-  const [isbookType, setIsBookType] = useState(1);
-  const [stepBuy, setStepBuy] = useState(0);
-  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   const handleOpenBook = (bookType) => {
     setIsBookType(bookType);
     setIsBookOpen(true);
@@ -22,87 +25,156 @@ function Home() {
     setStepBuy(0);
   };
 
+  const artists = [
+    {
+      id: 1,
+      name: "ᴘғ. 🧸`♡*",
+      image: "/images/hero-section-1.PNG",
+      socials: {
+        twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
+      },
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      image: "/images/hero-section-1.PNG",
+      socials: { twitter: "#" },
+    },
+    {
+      id: 3,
+      name: "Alice Johnson",
+      image: "/images/hero-section-1.PNG",
+      socials: { twitter: "#", facebook: "#", instagram: "#" },
+    },
+    {
+      id: 4,
+      name: "John Doe",
+      image: "/images/hero-section-1.PNG",
+      socials: { twitter: "#", facebook: "#", instagram: "#" },
+    },
+    {
+      id: 5,
+      name: "Jane Smith",
+      image: "/images/hero-section-1.PNG",
+      socials: {
+        twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      id: 6,
+      name: "Alice Johnson",
+      image: "/images/hero-section-1.PNG",
+      socials: { twitter: "#", facebook: "#", instagram: "#" },
+    },
+  ];
+
+  const writers = [
+    {
+      id: 1,
+      name: "ᴘғ. 🧸`♡*",
+      image: "/images/hero-section-1.PNG",
+      socials: {
+        twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
+        facebook: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
+        instagram: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
+      },
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      image: "/images/hero-section-1.PNG",
+      socials: { twitter: "#" },
+    },
+    {
+      id: 3,
+      name: "Alice Johnson",
+      image: "/images/hero-section-1.PNG",
+      socials: { twitter: "#", facebook: "#", instagram: "#" },
+    },
+    {
+      id: 4,
+      name: "John Doe",
+      image: "/images/hero-section-1.PNG",
+      socials: { twitter: "#", facebook: "#", instagram: "#" },
+    },
+  ];
+
+  const others = [
+    {
+      id: 1,
+      name: "ᴘғ. 🧸`♡*",
+      image: "/images/hero-section-1.PNG",
+      socials: {
+        twitter: "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
+      },
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      image: "/images/hero-section-1.PNG",
+      socials: { twitter: "#" },
+    },
+  ];
+
   return (
     <div className="home-container">
-      <div className="hero-section">
-        <div className="text-container">
-          <h2>ยินดีต้อนรับ</h2>
-        </div>
-        <div className="hero-section-img-box">
-          <img
-            src="/images/hero-section-1.PNG"
-            alt="My Image"
-            className="image"
-          />
-          <img
-            src="/images/hero-section-2.PNG"
-            alt="My Image"
-            className="image"
-          />
+      <Navbar />
+      <div className="carousel-blox">
+        <div className="carousel-wrapper">
+          <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            spaceBetween={50}
+            slidesPerView={1}
+            autoplay={{ delay: 5000, disableOnInteraction: false }} // เปลี่ยนสไลด์อัตโนมัติทุก 3 วิ
+            pagination={{ clickable: true, dynamicBullets: true }} // dot pagination ที่สามารถ scroll ได้
+            speed={1000}
+            loop={true}
+          >
+            <SwiperSlide>
+              <div className="carousel-item">
+                <img src="/images/hero-1.PNG" alt="My Image" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="carousel-item">
+                <img src="/images/hero-2.PNG" alt="My Image" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
+
       <div className="two-section">
-        <div className="text-container">
-          <h2>อะไรสักอย่าง</h2>
+        <div className="book-container">
+          <img
+            src="/images/Book_Dust_Jacket_Mockup_2.PNG"
+            alt="Book 1"
+            className="image book-front"
+          />
+          <img
+            src="/images/Book_Dust_Jacket_Mockup_1.PNG"
+            alt="Book 2"
+            className="image book-back"
+          />
         </div>
+
         <div className="hero-section-img-box">
-          <img
-            src="/images/hero-section-1.PNG"
-            alt="My Image"
-            className="image"
-          />
+          {" "}
+          <Button type="primary" onClick={() => navigate("/book")}>
+            กดสั่งซื้อ
+          </Button>
         </div>
       </div>
-      <div className="top-section">
-        <div className="image-container" onClick={() => handleOpenBook(1)}>
-          <img
-            src="/images/hero-section-1.PNG"
-            alt="My Image"
-            className="image-book"
-          />
+      <div className="contact-section">
+        <div>
+          <h3>ผู้เกี่ยวข้อง</h3>
         </div>
-        <div className="text-container">
-          <h2>สามารถจองได้แล้ว</h2>
-          <button className="btn" onClick={() => showDrawer()}>
-            สั่งซื้อ
-          </button>
-        </div>
+        <ContactList title="นักวาด" contacts={artists} />
+        <ContactList title="นักเขียน" contacts={writers} />
+        <ContactList title="ใครก็ไม่รู้" contacts={others} />
       </div>
-
-      {isBookOpen && (
-        <div className="book-modal">
-          <div className="modal-content">
-            <button className="close-btn" onClick={handleCloseBook}>
-              X
-            </button>
-            <Book currenBook={isbookType} />
-          </div>
-        </div>
-      )}
-
-      <div className="bottom-section">
-        <div className="text-container">
-          <h2>สามารถจองได้แล้ว</h2>
-          <button className="btn" onClick={() => showDrawer(2)}>
-            สั่งซื้อ
-          </button>
-        </div>
-        <div className="image-container" onClick={() => handleOpenBook()}>
-          <img
-            src="/images/hero-section-2.PNG"
-            alt="My Image"
-            className="image-book"
-          />
-        </div>
-      </div>
-      <div className="footer-section"></div>
-      <Drawer title="จองหนังสือ" onClose={onClose} mask={false} open={open}>
-        <DrawerSell
-          onClose={onClose}
-          stepBuy={stepBuy}
-          changeStepBuy={setStepBuy}
-        />
-      </Drawer>
     </div>
   );
 }

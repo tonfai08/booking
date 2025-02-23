@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Booking from "./pages/Booking";
 import Dashboard from "./pages/Admin";
 import AdminOrdersPage from "./pages/Admin/Orders";
+import CheckStatus from "./pages/CheckStatus";
 import "./styles.css";
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/book" element={<Booking />} />
+        <Route path="/checkstatus" element={<CheckStatus />} />
         <Route path="/admin" element={<Dashboard />} />
         <Route path="/admin/orders" element={<AdminOrdersPage />} />
       </Routes>

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import "../../components/Book/book.css";
 
-const Book = () => {
+const CheckStatus = () => {
   const bookRef = useRef();
 
   const pages = [
@@ -51,4 +51,4 @@ const Book = () => {
   );
 };
 
-export default Book;
+export default CheckStatus;

@@ -44,7 +44,7 @@ function Home() {
     {
       id: 2,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",
@@ -64,7 +64,7 @@ function Home() {
     {
       id: 4,
       name: "Lumina Luceat",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: { twitter: "#", facebook: "#", instagram: "#" },
     },
     {
@@ -114,7 +114,7 @@ function Home() {
     {
       id: 10,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",
@@ -199,7 +199,7 @@ function Home() {
     {
       id: 5,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",
@@ -229,7 +229,7 @@ function Home() {
     {
       id: 8,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",
@@ -239,7 +239,7 @@ function Home() {
     {
       id: 9,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",
@@ -249,7 +249,7 @@ function Home() {
     {
       id: 10,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",
@@ -259,7 +259,7 @@ function Home() {
     {
       id: 11,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",
@@ -281,7 +281,7 @@ function Home() {
     {
       id: 13,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",
@@ -291,7 +291,7 @@ function Home() {
     {
       id: 14,
       name: "Jaylor",
-      image: "/images/profile/jaylor.png",
+      image: "/images/profile/jaylor-1.png",
       socials: {
         twitter: "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
         bluesky: "https://bsky.app/profile/jxylor.bsky.social",

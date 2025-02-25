@@ -1,11 +1,19 @@
 import React from "react";
-import { FaXTwitter, FaFacebook, FaInstagram } from "react-icons/fa6"; // ใช้โลโก้ X แทน Twitter
+import {
+  FaXTwitter,
+  FaFacebook,
+  FaInstagram,
+  FaBluesky,
+  FaPenClip,
+} from "react-icons/fa6"; //
 import "./styles.css";
 
 const iconMap = {
   twitter: <FaXTwitter />,
   facebook: <FaFacebook />,
   instagram: <FaInstagram />,
+  bluesky: <FaBluesky />,
+  pen: <FaPenClip />,
 };
 
 const ContactList = ({ title, contacts }) => {

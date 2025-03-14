@@ -1,0 +1,41 @@
+/* ✅ ปุ่มปิดอยู่มุมขวาบนของหนังสือ */
+.book-close-btn {
+  position: absolute;
+  color: #ffffff;
+  top: -90px;
+  right: 10px;
+  font-size: 30px;
+  z-index: 10;
+}
+.book-close-btn :hover {
+  color: rgb(58, 57, 57);
+}
+
+/* ✅ ปรับ Flipbook ให้ดูเหมือนหนังสือ */
+.flipbook {
+  margin-top: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ ปรับขนาดและพื้นหลังของแต่ละหน้า */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.page img {
+  width: 100%;
+  height: 100%;
+}
+/* ✅ ปรับสไตล์ของปกหน้า */
+.cover-front img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ✅ ปรับสไตล์ของปกหลัง */
+.cover-back {
+  width: 100%;
+}

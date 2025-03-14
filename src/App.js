@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import Booking from "./pages/Booking";
+import Flipbook from "./pages/Book";
 import Dashboard from "./pages/Admin";
 import AdminOrdersPage from "./pages/Admin/Orders";
 import CheckStatus from "./pages/CheckStatus";
@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/book" element={<Booking />} />
+        <Route path="/book" element={<Flipbook />} />
         <Route path="/checkstatus" element={<CheckStatus />} />
         <Route path="/admin" element={<Dashboard />} />
         <Route path="/admin/orders" element={<AdminOrdersPage />} />

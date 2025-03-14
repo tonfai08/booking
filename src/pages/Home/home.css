@@ -9,33 +9,54 @@ body {
   background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
   background-attachment: fixed; /* ล็อกพื้นหลังไม่ให้เลื่อนตาม */
 }
-.carousel-blox {
+.header-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: linear-gradient(to bottom, #ffeed4, #fff7ea);
+  background: rgba(99, 99, 99, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  backdrop-filter: blur(5px);
+}
+
+.header-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.carousel-blox {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #ffffff;
   justify-content: center;
   display: flex;
   align-items: center;
-  padding: 80px 20px 20px 20px;
 }
 .carousel-wrapper {
   width: 100%;
 }
 
 .carousel-item {
-  height: 800px;
+  width: 100%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  border-radius: 10px;
-  margin: 80px 80px;
+}
+.carousel-img {
+  height: auto;
+  width: 100%;
 }
 .home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: #ffffff;
+  /* background: linear-gradient(to bottom, #ffeed4, #fff7ea); */
 }
 .hero-section {
   display: flex;
@@ -75,43 +96,38 @@ body {
   align-items: center;
   width: 100%;
   padding: 20px;
-  position: relative;
   height: 700px;
   flex-direction: row;
-  background: #fff1dd;
+  /* background: #fff1dd; */
+  background: #ffffff;
+  gap: 50px;
 }
 
-/* 🔹 กล่องหนังสือ */
 .book-container {
-  position: relative;
-  width: 700px; /* ปรับขนาด */
   height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
-/* 🔹 หนังสือแต่ละเล่ม */
 .image {
-  position: absolute;
-  width: 500px;
-  height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
-/* 🔹 เล่มหลัง (ลดการซ้อนทับ) */
 .book-back {
   transform: translate(10px, 5px);
-  z-index: 1;
   opacity: 0.85;
 }
 
-/* 🔹 เล่มหน้า (ลดการซ้อนทับ) */
+.shop {
+  width: 200px;
+  transform: translate(10px, 5px);
+  opacity: 0.85;
+}
+
 .book-front {
   transform: translate(10px, 5px);
-  z-index: 2;
-  left: -120px;
   opacity: 0.85;
 }
 
@@ -309,4 +325,50 @@ body {
 
 .foot-section .right a:hover {
   color: #1da1f2; /* เปลี่ยนสีเมื่อ hover (ใช้สี X/Twitter) */
+}
+.home-h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.ant-modal-content {
+  background: transparent !important; /* ทำให้พื้นหลัง Modal โปร่งใส */
+  box-shadow: none !important; /* ลบเงารอบ ๆ Modal */
+}
+@media screen and (max-width: 1200px) {
+  .carousel-blox {
+    width: 100%;
+  }
+  .two-section {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    flex-direction: column;
+  }
+  .book-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-blox {
+    flex-direction: column;
+    text-align: center;
+  }
+  .two-section {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    flex-direction: column;
+  }
+  .book-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }

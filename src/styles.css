@@ -3,5 +3,5 @@
 }
 
 body {
-  font-family: var(--font-family); /* ใช้ฟอนต์ Prompt */
+  font-family: "Prompt", sans-serif; /* ใช้ฟอนต์ Prompt */
 }

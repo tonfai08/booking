@@ -1,0 +1,150 @@
+{
+  "book-1": [
+    {
+      "name": "cover-front",
+      "image": "/images/book-1/cover-front.png"
+    },
+    {
+      "name": "page-1",
+      "image": "/images/book-1/1.png"
+    },
+    {
+      "name": "page-2",
+      "image": "/images/book-1/2.png"
+    },
+    {
+      "name": "page-3",
+      "image": "/images/book-1/3.png"
+    },
+    {
+      "name": "page-4",
+      "image": "/images/book-1/4.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/5.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/5.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/6.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/7.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/8.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/9.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/10.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/11.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/12.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/13.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/14.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/15.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/16.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-1/17.png"
+    },
+    {
+      "name": "cover-back",
+      "image": "/images/book-1/cover-back.png"
+    }
+  ],
+  "book-2": [
+    {
+      "name": "cover-front",
+      "image": "/images/book-2/cover-front.png"
+    },
+    {
+      "name": "page-1",
+      "image": "/images/book-2/1.png"
+    },
+    {
+      "name": "page-2",
+      "image": "/images/book-2/2.png"
+    },
+    {
+      "name": "page-3",
+      "image": "/images/book-2/3.png"
+    },
+    {
+      "name": "page-4",
+      "image": "/images/book-2/4.png"
+    },
+    {
+      "name": "page-5",
+      "image": "/images/book-2/5.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/6.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/7.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/8.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/9.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/10.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/11.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/12.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/13.png"
+    },
+    {
+      "name": "page-6",
+      "image": "/images/book-2/14.png"
+    },
+    {
+      "name": "cover-back",
+      "image": "/images/book-2/cover-back.png"
+    }
+  ]
+}

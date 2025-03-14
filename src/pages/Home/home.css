@@ -371,4 +371,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .image {
+    max-width: 240px;
+  }
 }

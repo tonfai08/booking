@@ -66,6 +66,12 @@
 
 @media (max-width: 480px) {
   .contact-list {
-    grid-template-columns: repeat(1, 1fr); /* 1 คนต่อแถว */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-item {
+    width: 240px;
   }
 }

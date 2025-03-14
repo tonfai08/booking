@@ -9,17 +9,23 @@ body {
   background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
   background-attachment: fixed; /* ล็อกพื้นหลังไม่ให้เลื่อนตาม */
 }
+
 .header-logo {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  background: rgba(99, 99, 99, 0.5);
-  z-index: 1000;
+
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.header-logo.scrolled {
+  background: rgba(99, 99, 99, 0.5);
   backdrop-filter: blur(5px);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .header-logo img {
@@ -28,7 +34,6 @@ body {
 }
 
 .carousel-blox {
-  margin-top: 40px;
   width: 100%;
   background-color: #ffffff;
   justify-content: center;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,15 +21,29 @@ function Home() {
   const navigate = useNavigate();
   const [isBookOpen, setIsBookOpen] = useState(false);
   const [selectedBook, setSelectedBook] = useState("book-1"); // ✅ เลือกหนังสือเริ่มต้น
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const openBook = (bookId) => {
     setSelectedBook(bookId);
     setIsBookOpen(true);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="home-container">
-      <div className="header-logo">
+      <div className={`header-logo ${isScrolled ? "scrolled" : ""}`}>
         <img src="/images/logo.png" alt="My Image" />
       </div>
 

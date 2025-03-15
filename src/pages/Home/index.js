@@ -141,7 +141,7 @@ function Home() {
       <div className="two-section">
         <div className="book-section">
           <div className="preview">
-            สามารถดู Preview เนื้อหา ได้โดย Click ที่หนังสือค่ะ
+            Click ที่หนังสือเพื่อดูเนื้อหา Preview ค่ะ
           </div>
           <div className="book-container">
             <img

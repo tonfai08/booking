@@ -23,13 +23,13 @@ const Book = ({ bookId, onClose }) => {
 
       <HTMLFlipBook
         ref={flipBook} // ✅ เชื่อมกับ useRef
-        width={400}
-        height={500}
+        width={425}
+        height={531}
         className="flipbook"
-        minWidth={300}
+        minWidth={326}
         maxWidth={600}
-        minHeight={400}
-        maxHeight={800}
+        minHeight={407}
+        maxHeight={749}
         size="stretch"
         maxShadowOpacity={0.5}
         showCover={true} // ✅ ให้รองรับปกเดี่ยว

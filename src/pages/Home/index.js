@@ -11,7 +11,7 @@ import { FaXTwitter, FaFacebook, FaInstagram } from "react-icons/fa6"; // ใช
 import { Modal } from "antd";
 import Book from "../../components/Book";
 import contacts from "../../data/contacts.json";
-
+import { checkVisit } from "../../services/visit";
 const iconMap = {
   twitter: <FaXTwitter />,
   facebook: <FaFacebook />,
@@ -39,6 +39,15 @@ function Home() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const logVisit = async () => {
+      const data = await checkVisit();
+      console.log("Visit logged:", data);
+    };
+
+    logVisit();
   }, []);
 
   return (

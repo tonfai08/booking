@@ -26,10 +26,6 @@
     },
     {
       "name": "page-5",
-      "image": "/images/book-1/5.png"
-    },
-    {
-      "name": "page-5",
       "image": "/images/book-1/6.png"
     },
     {
@@ -79,10 +75,6 @@
     {
       "name": "page-5",
       "image": "/images/book-1/18.png"
-    },
-    {
-      "name": "page-5",
-      "image": ""
     },
     {
       "name": "cover-back",

@@ -1,9 +1,9 @@
 /* 🔹 Contact List Container */
 .contact-section {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .contact-list {
@@ -18,6 +18,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30px;
+  padding-bottom: 30px;
 }
 .contact-h4 {
   font-size: 24px;
@@ -68,10 +70,16 @@
 }
 
 .contact-socials a:hover {
-  color: #ff6600;
+  color: #b20710;
+}
+.contact-divider {
+  width: 80%;
+  height: 2px;
+  background-color: white; /* เปลี่ยนสีเป็นขาว */
+  margin: 40px auto; /* ตั้ง margin auto ทำให้กึ่งกลาง */
+  opacity: 0.5;
 }
 
-/* 🔹 Responsive: ลดจำนวนคอลัมน์ในจอเล็ก */
 @media (max-width: 1025px) {
   .contact-list {
     grid-template-columns: repeat(2, 1fr); /* 2 คนต่อแถว */

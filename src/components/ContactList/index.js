@@ -4,7 +4,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaBluesky,
-  FaPenClip,
+  FaPenFancy,
 } from "react-icons/fa6"; //
 import "./styles.css";
 
@@ -13,7 +13,7 @@ const iconMap = {
   facebook: <FaFacebook />,
   instagram: <FaInstagram />,
   bluesky: <FaBluesky />,
-  pen: <FaPenClip />,
+  pen: <FaPenFancy />,
 };
 
 const ContactList = ({ title, contacts }) => {
@@ -50,6 +50,11 @@ const ContactList = ({ title, contacts }) => {
           </div>
         ))}
       </div>
+      {title !== "Staff" ? (
+        <div className="contact-divider"></div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 };

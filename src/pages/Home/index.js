@@ -116,11 +116,24 @@ function Home() {
         </div>
       </div>
 
+      <div className="sell-container">
+        <a href="https://forms.gle/X3xTnqL8WA4tWPc47">
+          <img src="/images/shop-white.png" alt="shop" className="sell-img" />
+        </a>
+        <a href="https://script.google.com/macros/s/AKfycbxuPbCxDRsJcc0obNi3zMZ-cDmfwq2nsn9RDkTRDQZKncpsrg8WcKxC76_KsGgJSUYJ/exec">
+          <img
+            src="/images/tracking-white.png"
+            alt="shop"
+            className="sell-img"
+          />
+        </a>
+      </div>
+
       <div className="two-section">
-        <div className="preview">
-          สามารถดู Preview เนื้อหา ได้โดย Click ที่หนังสือค่ะ
-        </div>
         <div className="book-section">
+          <div className="preview">
+            สามารถดู Preview เนื้อหา ได้โดย Click ที่หนังสือค่ะ
+          </div>
           <div className="book-container">
             <img
               src="/images/Book_Dust_Jacket_Mockup_2.png"
@@ -135,25 +148,6 @@ function Home() {
               className="image book-back"
               onClick={() => openBook("book-2")}
             />
-          </div>
-          <div className="sell-container">
-            <div className="hero-section-img-box">
-              <a type="primary" href="https://forms.gle/X3xTnqL8WA4tWPc47">
-                <img src="/images/shop.png" alt="shop" className="image shop" />
-              </a>
-            </div>
-            <div className="hero-section-img-box">
-              <a
-                type="primary"
-                href=" https://script.google.com/macros/s/AKfycbyvcnmUwgWdmAtZTa3Bu61pVnumCtkJ2qLwvEvBV0VXGzGg-lh3Xdi3MEiOBLAF8JWx/exec"
-              >
-                <img
-                  src="/images/tracking.png"
-                  alt="shop"
-                  className="image shop"
-                />
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -175,6 +169,7 @@ function Home() {
         <div>
           <h3 className="home-h3">Contributors</h3>
         </div>
+        <div className="contact-divider"></div>
         <ContactList title="Artists" contacts={contacts.artists} />
         <ContactList title="Writers" contacts={contacts.writers} />
         <ContactList title="Staff" contacts={contacts.others} />

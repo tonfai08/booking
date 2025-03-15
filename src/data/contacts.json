@@ -2,26 +2,26 @@
   "artists": [
     {
       "id": 1,
-      "name": "ᴘғ. 🧸`♡*",
-      "image": "/images/profile/1.png",
+      "name": "𝐀𝐘𝐀🌷",
+      "image": "/images/profile/aiyanoya.jpg",
       "socials": {
-        "twitter": "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg"
+        "twitter": "https://x.com/aiyanoya"
       }
     },
     {
       "id": 2,
-      "name": "Jaylor",
-      "image": "/images/profile/jaylor-1.png",
+      "name": "Black Hitomi",
+      "image": "/images/profile/Blackhitomi.jpg",
       "socials": {
-        "twitter": "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
-        "bluesky": "https://bsky.app/profile/jxylor.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2644295"
+        "twitter": "https://x.com/blackhitomi?t=lUr2dx7o5187_Ylp0_i9gw&s=09",
+        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=5367268",
+        "instagram": "https://www.instagram.com/black.hitomi_?igsh=M3lnZnRhMGswZ2Ry"
       }
     },
     {
       "id": 3,
       "name": "ฮาทคุง",
-      "image": "/images/profile/kzr1402.png",
+      "image": "/images/profile/ฮาทคุง.PNG",
       "socials": {
         "twitter": "https://x.com/kzr1402?s=21&t=TkbQS0ksydw1ufimYSQFBw",
         "bluesky": "https://bsky.app/profile/krrorz.bsky.social",
@@ -30,17 +30,15 @@
     },
     {
       "id": 4,
-      "name": "Lumina Luceat",
-      "image": "/images/profile/jaylor-1.png",
+      "name": "ขนมปัง",
+      "image": "/images/profile/kapunng.JPG",
       "socials": {
-        "twitter": "#",
-        "facebook": "#",
-        "instagram": "#"
+        "twitter": "https://x.com/kapunng?s=21&t=vU-F_L5ajCVk2Od4BiW5pA"
       }
     },
     {
       "id": 5,
-      "name": "โม",
+      "name": "Mocha",
       "image": "/images/profile/mocha.png",
       "socials": {
         "twitter": "https://x.com/mocha_2909?s=21",
@@ -49,28 +47,27 @@
     },
     {
       "id": 6,
-      "name": "myumyday",
-      "image": "/images/hero-section-1.png",
+      "name": "OPloyGoldfish",
+      "image": "/images/profile/OPloyGoldfish.JPG",
       "socials": {
-        "twitter": "#",
-        "facebook": "#",
-        "instagram": "#"
+        "twitter": "https://x.com/oploygoldfish_a?s=21&t=VYoSN9jmn6eOPgz3VmorSQ",
+        "bluesky": "https://bsky.app/profile/oploygoldfish.bsky.social",
+        "instagram": "https://www.instagram.com/oploygoldfish/profilecard/?igsh=MWl2ajBzbHdqMDJqYg=="
       }
     },
     {
       "id": 7,
-      "name": "seatale",
-      "image": "/images/profile/seatale.jpg",
+      "name": "น้วย",
+      "image": "/images/profile/Redsaturn__n.png",
       "socials": {
-        "twitter": "https://x.com/S3ATAL3",
-        "bluesky": "https://bsky.app/profile/seatale.bsky.social",
-        "pen": "https://seatale.readawrite.com/"
+        "twitter": "https://x.com/Redsaturn__n",
+        "bluesky": "https://bsky.app/profile/redsaturnnnn.bsky.social"
       }
     },
     {
       "id": 8,
       "name": "ลิตา",
-      "image": "/images/profile/YounLitt.png",
+      "image": "/images/profile/Younlitt_09.PNG",
       "socials": {
         "twitter": "https://x.com/younlitt_09/",
         "bluesky": "https://bsky.app/profile/younlitt.bsky.social",
@@ -79,121 +76,99 @@
     },
     {
       "id": 9,
-      "name": "ᴘғ. 🧸`♡*",
-      "image": "/images/profile/1.png",
+      "name": "Belisa",
+      "image": "/images/profile/Belisa.jpg",
       "socials": {
-        "twitter": "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg"
+        "twitter": "https://x.com/_Belisa19",
+        "bluesky": "https://bsky.app/profile/belisa19.bsky.social"
       }
     },
     {
       "id": 10,
-      "name": "Jaylor",
-      "image": "/images/profile/jaylor-1.png",
+      "name": "ขาหมูทอด",
+      "image": "/images/profile/Kodmuta_.JPG",
       "socials": {
-        "twitter": "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
-        "bluesky": "https://bsky.app/profile/jxylor.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2644295"
+        "twitter": "https://x.com/kodmuta_?t=epgcuBQFBBGUQRtB2aBAAQ&s=09"
       }
     },
     {
       "id": 11,
-      "name": "ᴘғ. 🧸`♡*",
-      "image": "/images/profile/1.png",
+      "name": "NuUngung456",
+      "image": "/images/profile/NuUngung456.jpg",
       "socials": {
-        "twitter": "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg"
+        "twitter": "https://x.com/NuUngung",
+        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=1935051",
+        "facebook": "https://www.facebook.com/NuUngung"
       }
     },
     {
       "id": 12,
-      "name": "Lumina Luceat",
-      "image": "/images/profile/1.png",
+      "name": "Redhood",
+      "image": "/images/profile/Redhood.jpg",
       "socials": {
-        "twitter": "https://x.com/Lumina_Luceat?t=n43W7w8TY28ZH2oBagiV7w&s=09",
-        "bluesky": "https://bsky.app/profile/luminaluceat.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2574643",
-        "instragram": "https://www.instagram.com/luminaluceat?igsh=Mzg2M3p0ZjZhand2"
+        "twitter": "https://x.com/redhood1412",
+        "bluesky": "https://bsky.app/profile/redhood9158.bsky.social"
       }
     },
     {
       "id": 13,
-      "name": "ᴘғ. 🧸`♡*",
-      "image": "/images/profile/1.png",
+      "name": "Tempurian",
+      "image": "/images/profile/Tempurian.jpg",
       "socials": {
-        "twitter": "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg"
-      }
-    },
-    {
-      "id": 14,
-      "name": "ppeachbf_",
-      "image": "/images/profile/1.png",
-      "socials": {
-        "twitter": "https://x.com/ppeachbf_?t=cDG2ZkmiAuXLv3n7D0G4kA&s=09",
-        "bluesky": "https://bsky.app/profile/ppeachbf.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2698080"
+        "twitter": "https://x.com/Tempurian"
       }
     }
   ],
   "writers": [
     {
       "id": 1,
-      "name": "ᴘғ. 🧸`♡*",
-      "image": "/images/hero-section-1.png",
+      "name": "ปอจอ",
+      "image": "/images/profile/adimar.JPG",
       "socials": {
-        "twitter": "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
-        "facebook": "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg",
-        "instagram": "https://x.com/lililaxx?s=21&t=trriZKjO9sE5g1x4gUyGpg"
+        "twitter": "https://x.com/0429pp?s=21",
+        "bluesky": "https://bsky.app/profile/0429pp.bsky.social",
+        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=1805651"
       }
     },
     {
       "id": 2,
-      "name": "Jane Smith",
-      "image": "/images/hero-section-1.png",
+      "name": "blueberriexz",
+      "image": "/images/profile/blueberriexz.jpg",
       "socials": {
-        "twitter": "#"
+        "twitter": "https://x.com/blueberriexz",
+        "pen": "https://blueberriexz.readawrite.com/"
       }
     },
     {
       "id": 3,
-      "name": "Alice Johnson",
-      "image": "/images/hero-section-1.png",
+      "name": "captainmeowss",
+      "image": "/images/profile/captainmeowss.jpg",
       "socials": {
-        "twitter": "#",
-        "facebook": "#",
-        "instagram": "#"
+        "twitter": "https://x.com/captainmeowss",
+        "bluesky": "https://bsky.app/profile/captainmeowss.bsky.social",
+        "pen": "https://captainmeowss.readawrite.com"
       }
     },
     {
       "id": 4,
-      "name": "John Doe",
-      "image": "/images/hero-section-1.png",
+      "name": "lunaverse",
+      "image": "/images/profile/lunaverse.png",
       "socials": {
-        "twitter": "#",
-        "facebook": "#",
-        "instagram": "#"
-      }
-    },
-    {
-      "id": 4,
-      "name": "John Doe",
-      "image": "/images/hero-section-1.png",
-      "socials": {
-        "twitter": "#",
-        "facebook": "#",
-        "instagram": "#"
+        "pen": "https://hopeniverse.readawrite.com"
       }
     },
     {
       "id": 5,
-      "name": "Jaylor",
-      "image": "/images/profile/jaylor-1.png",
+      "name": "Cynxweek",
+      "image": "/images/profile/Cynxweek.jpg",
       "socials": {
-        "twitter": "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
-        "bluesky": "https://bsky.app/profile/jxylor.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2644295"
+        "twitter": "https://x.com/miiz16s",
+        "bluesky": "https://bsky.app/profile/cynxweek.bsky.social",
+        "pen": "https://cynxweek.readawrite.com/"
       }
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "myumyday",
       "image": "/images/profile/myumyday.png",
       "socials": {
@@ -203,7 +178,7 @@
       }
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "seatale",
       "image": "/images/profile/seatale.jpg",
       "socials": {
@@ -213,13 +188,20 @@
       }
     },
     {
-      "id": 8,
-      "name": "Jaylor",
-      "image": "/images/profile/jaylor-1.png",
+      "id": 7,
+      "name": "ตะติงนัง",
+      "image": "/images/profile/ตะติงนัง.JPG",
       "socials": {
-        "twitter": "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
-        "bluesky": "https://bsky.app/profile/jxylor.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2644295"
+        "twitter": "https://x.com/tingnung852?s=21&t=cQCOOxXSdAsJqbCKu3rXCQ"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Deffadil",
+      "image": "/images/profile/Deffadil.jpeg",
+      "socials": {
+        "twitter": "https://x.com/deffadil",
+        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2622628"
       }
     },
     {
@@ -233,60 +215,49 @@
       }
     },
     {
-      "id": 10,
-      "name": "Jaylor",
-      "image": "/images/profile/jaylor-1.png",
-      "socials": {
-        "twitter": "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
-        "bluesky": "https://bsky.app/profile/jxylor.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2644295"
-      }
-    },
-    {
-      "id": 11,
-      "name": "Jaylor",
-      "image": "/images/profile/jaylor-1.png",
-      "socials": {
-        "twitter": "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
-        "bluesky": "https://bsky.app/profile/jxylor.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2644295"
-      }
-    },
-    {
       "id": 12,
-      "name": "Lumina Luceat",
-      "image": "/images/profile/lumina.png",
+      "name": "JRinx",
+      "image": "/images/profile/JRinx.jpg",
       "socials": {
-        "twitter": "https://x.com/Lumina_Luceat?t=n43W7w8TY28ZH2oBagiV7w&s=09",
-        "bluesky": "https://bsky.app/profile/luminaluceat.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2574643"
-      },
-      "instragram": "https://www.instagram.com/luminaluceat?igsh=Mzg2M3p0ZjZhand2"
+        "twitter": "https://x.com/lllllilith?t=Y1S6vEP7_puFHgxS3T0U9A&s=09",
+        "bluesky": "https://bsky.app/profile/lllllilith.bsky.social",
+        "pen": "https://jrinx.readawrite.com"
+      }
     },
     {
       "id": 13,
-      "name": "Jaylor",
-      "image": "/images/profile/jaylor-1.png",
+      "name": "Lumina Luceat",
+      "image": "/images/profile/LuminaLuceat.jpg",
       "socials": {
-        "twitter": "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
-        "bluesky": "https://bsky.app/profile/jxylor.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2644295"
+        "twitter": "https://x.com/Lumina_Luceat?t=n43W7w8TY28ZH2oBagiV7w&s=09",
+        "bluesky": "https://bsky.app/profile/luminaluceat.bsky.social",
+        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2574643",
+        "instagram": "https://www.instagram.com/luminaluceat?igsh=Mzg2M3p0ZjZhand2"
       }
     },
     {
       "id": 14,
-      "name": "Jaylor",
-      "image": "/images/profile/jaylor-1.png",
+      "name": "13th felice",
+      "image": "/images/profile/13thfelice.jpg",
       "socials": {
-        "twitter": "https://x.com/jxylor?s=21&t=NN8Aj7UU1q_adgdKy55hgA",
-        "bluesky": "https://bsky.app/profile/jxylor.bsky.social",
-        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=2644295"
+        "twitter": "https://x.com/Michiyo_Yoz?t=i8VJcMpW_aRAjgCGC9wQtw&s=09",
+        "pen": "https://www.readawrite.com/?action=user_page&user_id_publisher=1295418"
       }
     },
     {
       "id": 15,
+      "name": "ขนมปังที่ร่วงบนหมอน",
+      "image": "/images/profile/ขนมปังที่ร่วงบนหมอน.JPG",
+      "socials": {
+        "twitter": "https://x.com/parichats_?s=21&t=pjfb4PIgez5X2ZW7M0C0fg",
+        "bluesky": "https://bsky.app/profile/p54h.bsky.social",
+        "pen": "https://p54h.readawrite.com"
+      }
+    },
+    {
+      "id": 16,
       "name": "ppeachbf_",
-      "image": "/images/profile/ppeachbf.png",
+      "image": "/images/profile/ppeachbf_.png",
       "socials": {
         "twitter": "https://x.com/ppeachbf_?t=cDG2ZkmiAuXLv3n7D0G4kA&s=09",
         "bluesky": "https://bsky.app/profile/ppeachbf.bsky.social",
@@ -305,10 +276,10 @@
     },
     {
       "id": 2,
-      "name": "Jane Smith",
-      "image": "/images/hero-section-1.png",
+      "name": "dorimu",
+      "image": "/images/profile/dorimu.jpg",
       "socials": {
-        "twitter": "#"
+        "twitter": "https://x.com/tuesdday_"
       }
     }
   ]

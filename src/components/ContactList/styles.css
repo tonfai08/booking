@@ -1,13 +1,24 @@
 /* 🔹 Contact List Container */
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 .contact-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* แสดง 3 คนต่อแถว */
   gap: 20px;
-  width: 100%;
   max-width: 900px;
   margin: auto;
+  place-items: center;
 }
-
+.contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact-h4 {
   font-size: 24px;
 }
@@ -21,7 +32,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  color: black;
+  height: 236px;
+  width: 240px;
 }
 
 /* 🔹 รูปภาพเป็นสี่เหลี่ยมจัตุรัส */
@@ -58,20 +72,23 @@
 }
 
 /* 🔹 Responsive: ลดจำนวนคอลัมน์ในจอเล็ก */
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   .contact-list {
     grid-template-columns: repeat(2, 1fr); /* 2 คนต่อแถว */
+  }
+  .contact-item {
+    height: 236px;
+    width: 180px;
   }
 }
 
 @media (max-width: 480px) {
   .contact-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   .contact-item {
-    width: 240px;
+    height: 236px;
+    width: 130px;
   }
 }

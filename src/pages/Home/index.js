@@ -30,7 +30,7 @@ function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 80) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -117,30 +117,46 @@ function Home() {
       </div>
 
       <div className="two-section">
-        <div className="book-container">
-          {/* ✅ เปิด book-1 */}
-          <img
-            src="/images/Book_Dust_Jacket_Mockup_2.png"
-            alt="Book 1"
-            className="image book-front"
-            onClick={() => openBook("book-1")}
-          />
-          {/* ✅ เปิด book-2 */}
-          <img
-            src="/images/Book_Dust_Jacket_Mockup_1.png"
-            alt="Book 2"
-            className="image book-back"
-            onClick={() => openBook("book-2")}
-          />
+        <div className="preview">
+          สามารถดู Preview เนื้อหา ได้โดย Click ที่หนังสือค่ะ
         </div>
-
-        <div className="hero-section-img-box">
-          <a type="primary" href="https://forms.gle/X3xTnqL8WA4tWPc47">
-            <img src="/images/shop.png" alt="shop" className="image shop" />
-          </a>
+        <div className="book-section">
+          <div className="book-container">
+            <img
+              src="/images/Book_Dust_Jacket_Mockup_2.png"
+              alt="Book 1"
+              className="image book-front"
+              onClick={() => openBook("book-1")}
+            />
+            {/* ✅ เปิด book-2 */}
+            <img
+              src="/images/Book_Dust_Jacket_Mockup_1.png"
+              alt="Book 2"
+              className="image book-back"
+              onClick={() => openBook("book-2")}
+            />
+          </div>
+          <div className="sell-container">
+            <div className="hero-section-img-box">
+              <a type="primary" href="https://forms.gle/X3xTnqL8WA4tWPc47">
+                <img src="/images/shop.png" alt="shop" className="image shop" />
+              </a>
+            </div>
+            <div className="hero-section-img-box">
+              <a
+                type="primary"
+                href=" https://script.google.com/macros/s/AKfycbyvcnmUwgWdmAtZTa3Bu61pVnumCtkJ2qLwvEvBV0VXGzGg-lh3Xdi3MEiOBLAF8JWx/exec"
+              >
+                <img
+                  src="/images/tracking.png"
+                  alt="shop"
+                  className="image shop"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-
       <Modal
         title=""
         open={isBookOpen}
@@ -155,7 +171,7 @@ function Home() {
         <Book bookId={selectedBook} onClose={() => setIsBookOpen(false)} />
       </Modal>
 
-      <div className="contact-section">
+      <div className="home-contact-section">
         <div>
           <h3 className="home-h3">Contributors</h3>
         </div>
@@ -169,10 +185,18 @@ function Home() {
           <h3>Operated by @krtskandkhn_th</h3>
         </div>
         <div className="right">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://x.com/krtskandkhn_th?s=21&t=trriZKjO9sE5g1x4gUyGpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {iconMap["twitter"]}
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/krtskandkhn_th?igsh=MTk3MWJ1Y2R0eWVvZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {iconMap["instagram"]}
           </a>
         </div>

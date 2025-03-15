@@ -19,7 +19,7 @@ const iconMap = {
 const ContactList = ({ title, contacts }) => {
   return (
     <div className="contact-section">
-      <div>
+      <div className="contact-title">
         <h4 className="contact-h4">{title}</h4>
       </div>
       <div className="contact-list">

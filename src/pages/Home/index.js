@@ -129,7 +129,7 @@ function Home() {
         <a href="https://forms.gle/X3xTnqL8WA4tWPc47">
           <img src="/images/shop-white.png" alt="shop" className="sell-img" />
         </a>
-        <a href="https://script.google.com/macros/s/AKfycbxuPbCxDRsJcc0obNi3zMZ-cDmfwq2nsn9RDkTRDQZKncpsrg8WcKxC76_KsGgJSUYJ/exec">
+        <a href="https://order-detail-eight.vercel.app/check-order">
           <img
             src="/images/tracking-white.png"
             alt="shop"

@@ -22,7 +22,7 @@
   padding-bottom: 30px;
 }
 .contact-h4 {
-  font-size: 24px;
+  font-size: 32px;
 }
 /* 🔹 Contact Item (รูปแบบสี่เหลี่ยม) */
 .contact-item {
@@ -35,14 +35,19 @@
   align-items: center;
   justify-content: center;
   color: black;
-  height: 236px;
+  height: 300px;
   width: 240px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-item:hover {
+  transform: scale(1.1); /* ขยาย 5% */
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* 🔹 รูปภาพเป็นสี่เหลี่ยมจัตุรัส */
 .contact-image {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -95,12 +100,12 @@
     gap: 20px;
   }
   .contact-item {
-    height: 200px;
-    width: 130px;
+    height: 220px;
+    width: 160px;
   }
   .contact-image {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
   .contact-name {
     font-size: 12px;

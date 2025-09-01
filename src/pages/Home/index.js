@@ -12,6 +12,7 @@ import { Modal } from "antd";
 import Book from "../../components/Book";
 import contacts from "../../data/contacts.json";
 import { checkVisit } from "../../services/visit";
+import Navbar from "../../components/Navbar";
 const iconMap = {
   twitter: <FaXTwitter />,
   facebook: <FaFacebook />,
@@ -52,11 +53,26 @@ function Home() {
 
   return (
     <div className="home-container">
-      <div className={`header-logo ${isScrolled ? "scrolled" : ""}`}>
-        <img src="/images/logo.png" alt="My Image" />
-      </div>
+      <Navbar />
+      <section id="home" className="hero-section">
+        <img
+          src="/images/hero-section.png"
+          alt="shop"
+          className="sell-img"
+        />
+      </section>
 
-      <div className="carousel-blox">
+      <section id="about" className="section-about-us">
+
+        <h2> Work Hard, Love Harder!</h2>
+        <div class="detail-about">
+          <div>Unofficial Anthology ของคู่ <span>Kuroo Tetsurou x Tsukishima Kei</span> และคู่ <span>Kozume Kenma x Hinata Shoyo</span> จากเรื่อง Haikyu!<br/></div>
+          <div>โปรเจกต์หนังสือรวมเรื่องสั้นที่ประกอบไปด้วย Fanfics, Illustrations และ Comics ที่มีมากกว่า 20 เรื่องราว ในธีม <span>'อาชีพ'</span> ที่หลากหลาย</div>
+          <div>รังสรรค์โดยทีมผู้กำกับจำนวน 30 ท่าน ของ KRTSKKHN Productions</div>
+        </div>
+
+      </section>
+      {/* <div className="carousel-blox">
         <div className="carousel-wrapper">
           <Swiper
             modules={[Autoplay, Pagination, Navigation]}
@@ -123,40 +139,57 @@ function Home() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </div>
-
-      <div className="sell-container">
-        <a href="https://forms.gle/X3xTnqL8WA4tWPc47">
-          <img src="/images/shop-white.png" alt="shop" className="sell-img" />
-        </a>
-        <a href="https://order-detail-eight.vercel.app/check-order">
-          <img
-            src="/images/tracking-white.png"
-            alt="shop"
-            className="sell-img"
-          />
-        </a>
-      </div>
+      </div> */}
 
       <div className="two-section">
         <div className="book-section">
-          <div className="preview">
-            Click ที่หนังสือเพื่อดูเนื้อหา Preview ค่ะ
-          </div>
           <div className="book-container">
-            <img
-              src="/images/Book_Dust_Jacket_Mockup_2.png"
-              alt="Book 1"
-              className="image book-front"
-              onClick={() => openBook("book-1")}
-            />
-            {/* ✅ เปิด book-2 */}
-            <img
-              src="/images/Book_Dust_Jacket_Mockup_1.png"
-              alt="Book 2"
-              className="image book-back"
-              onClick={() => openBook("book-2")}
-            />
+            <div class="book-row">
+              <div className="book-img">
+                <img
+                  src="/images/Book_Dust_Jacket_Mockup_2.png"
+                  alt="Book 1"
+                  className="image book-front"
+                  onClick={() => openBook("book-1")}
+                />
+                <p>Click ที่หนังสือเพื่อดูเนื้อหา Preview</p>
+              </div>
+              <div class="book-detail"><h3>Work Hard, Love Harder!<br /> (Unofficial KRTSK Anthology)</h3>
+                <p>Paring: Kuroo Tetsurou x Tsukishima Kei<br />
+                  Contains<br />
+                  • 8 one-shot fanfictions<br />
+                  • 1 short comic<br />
+                  • 7 illustrations<br />
+                  </p>
+                  <br />
+                <a class="btn-action" href="https://forms.gle/ow9R19eRtkvW4zrn6" target="_blank" rel="noopener noreferrer">Order Here</a>
+
+              </div>
+
+            </div>
+            <div class="book-row section-2">
+              <div class="book-detail">
+                <h3>Work Hard, Love Harder!<br /> (Unofficial KHN Anthology)</h3>
+                <p>Paring: Kozume Kenma x Hinata Shoyo<br />
+                  Contains<br />
+                  • 8 one-shot fanfictions<br />
+                  • 1 short comic<br />
+                  • 5 illustrations<br />
+                 </p>
+                 <br />
+                <a class="btn-action" href="https://forms.gle/ow9R19eRtkvW4zrn6" target="_blank" rel="noopener noreferrer">Order Here</a>
+
+              </div>
+              <div className="book-img">
+                <img
+                  src="/images/Book_Dust_Jacket_Mockup_1.png"
+                  alt="Book 2"
+                  className="image book-back"
+                  onClick={() => openBook("book-2")}
+                />
+                <p>Click ที่หนังสือเพื่อดูเนื้อหา Preview</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -173,8 +206,18 @@ function Home() {
       >
         <Book bookId={selectedBook} onClose={() => setIsBookOpen(false)} />
       </Modal>
+      <div className="sell-container">
+       
+        <a href="https://order-detail-eight.vercel.app/check-order">
+          <img
+            src="/images/tracking-white.png"
+            alt="shop"
+            className="sell-img"
+          />
+        </a>
+      </div>
 
-      <div className="home-contact-section">
+      <section id="contributors" class="home-contact-section">
         <div>
           <h3 className="home-h3">Contributors</h3>
         </div>
@@ -182,8 +225,7 @@ function Home() {
         <ContactList title="Artists" contacts={contacts.artists} />
         <ContactList title="Writers" contacts={contacts.writers} />
         <ContactList title="Staff" contacts={contacts.others} />
-      </div>
-
+      </section>
       <div className="foot-section">
         <div className="left">
           <h3>Operated by @krtskandkhn_th</h3>

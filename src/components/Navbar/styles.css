@@ -1,0 +1,82 @@
+/* header เดิมของคุณ */
+.header-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  background-color: #161616;
+  flex-direction: column;
+}
+.header-logo.scrolled {
+  background: rgba(99, 99, 99, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* ให้เต็มความกว้าง */
+}
+.header-logo img { width: 200px; height: auto; }
+
+/* layout ภายใน */
+.nav-inner {
+  width: 100%;
+  max-width: 1120px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+/* เมนู */
+.menu { list-style: none; margin: 0; padding: 0; }
+.menu.desktop { display: flex; }
+.menu li { display: inline-block; margin-left: 1rem; }
+.menu a {
+  color: #fff; text-decoration: none; font-weight: 600; padding: .5rem .25rem;
+}
+.menu a:hover { color: #e1d56e; }
+.menu a.active { border-bottom: 2px solid #e1d56e; }
+
+/* Mobile */
+.menu-toggle { background: none; border: 0; color: #fff; font-size: 1.5rem; }
+.mobile-panel { display: none; border-top: 1px solid #333; background: #161616; }
+.mobile-panel.open { display: block; }
+.menu.mobile { display: flex; flex-direction: column; padding: .5rem 1rem 1rem; }
+.btn-status{
+  border: #e1d56e 1px solid;
+  background-color: #e1d56e;
+  border-radius: 8px;
+  padding: 8px 16px  !important;
+  width: 180px;
+  color: #161616 !important;
+  text-align: center;
+}
+.btn-status a {
+  color: #000000;
+}
+/* Desktop ≥768px */
+@media (min-width: 768px) {
+  .menu-toggle, .mobile-panel { display: none; }
+  .header-logo{
+  flex-direction: row;
+  }
+}
+
+/* ช่วยให้ anchor ไม่โดนทับโดย header */
+.section {
+  scroll-margin-top: 80px; /* ปรับตามความสูง header ของคุณ */
+}
+@media screen and (max-width: 768px) {
+.menu.desktop { display: none; }
+.menu.mobile li { display: block; }
+.menu.mobile a { display: block; padding: .75rem 0; }
+.mobile-panel{
+  width: 350px;
+}
+ .btn-status{
+     width: 100%;
+  }
+  .nav-inner {
+    width: auto;
+    margin: 8px;
+}
+}

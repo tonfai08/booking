@@ -215,16 +215,6 @@
       }
     },
     {
-      "id": 12,
-      "name": "JRinx",
-      "image": "/images/profile/JRinx.jpg",
-      "socials": {
-        "twitter": "https://x.com/lllllilith?t=Y1S6vEP7_puFHgxS3T0U9A&s=09",
-        "bluesky": "https://bsky.app/profile/lllllilith.bsky.social",
-        "pen": "https://jrinx.readawrite.com"
-      }
-    },
-    {
       "id": 13,
       "name": "Lumina Luceat",
       "image": "/images/profile/LuminaLuceat.jpg",
@@ -280,6 +270,16 @@
       "image": "/images/profile/dorimu.jpg",
       "socials": {
         "twitter": "https://x.com/tuesdday_"
+      }
+    },
+    {
+      "id": 12,
+      "name": "JRinx",
+      "image": "/images/profile/JRinx.jpg",
+      "socials": {
+        "twitter": "https://x.com/lllllilith?t=Y1S6vEP7_puFHgxS3T0U9A&s=09",
+        "bluesky": "https://bsky.app/profile/lllllilith.bsky.social",
+        "pen": "https://jrinx.readawrite.com"
       }
     }
   ]

@@ -6,13 +6,18 @@ body {
   background-color: #161616;
 }
 
+.home-bg {
+  position: fixed;
+  inset: 0;
+  background: url("../../assets/BG.png") center / cover no-repeat;
+  z-index: -1;
+  /* ลดจังหวะจอเบลอเวลาเพนต์ */
+  transform: translateZ(0);
+  will-change: transform;
+}
+
 .home-container {
   min-height: 100vh;
-  background-image: url("../../assets/BG.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
   color: #fff;
   display: flex;

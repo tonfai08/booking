@@ -70,10 +70,9 @@
 .menu.mobile li { display: block; }
 .menu.mobile a { display: block; padding: .75rem 0; }
 .mobile-panel{
-  width: 350px;
 }
  .btn-status{
-     width: 100%;
+     width: 310px;
   }
   .nav-inner {
     width: auto;

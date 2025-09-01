@@ -68,7 +68,7 @@ function Home() {
         <div class="detail-about">
           <div>Unofficial Anthology ของคู่ <span>Kuroo Tetsurou x Tsukishima Kei</span> และคู่ <span>Kozume Kenma x Hinata Shoyo</span> จากเรื่อง Haikyu!<br/></div>
           <div>โปรเจกต์หนังสือรวมเรื่องสั้นที่ประกอบไปด้วย Fanfics, Illustrations และ Comics ที่มีมากกว่า 20 เรื่องราว ในธีม <span>'อาชีพ'</span> ที่หลากหลาย</div>
-          <div>รังสรรค์โดยทีมผู้กำกับจำนวน 30 ท่าน ของ KRTSKKHN Productions</div>
+          <div>รังสรรค์โดยทีมผู้กำกับทั้ง 30 ท่าน ของ KRTSKKHN Productions</div>
         </div>
 
       </section>
